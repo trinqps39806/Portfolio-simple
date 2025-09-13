@@ -5,6 +5,15 @@ header {
 .header__container {
     display: flex;
     gap: 40px;
+
+    & p {
+        color: var(--n-600);
+    }
+
+    & span {
+        color: var(--p-950);
+        font-weight: 600;
+    }
 }
 
 .header__title {
@@ -43,4 +52,27 @@ header {
         -webkit-line-clamp: 1;
         overflow: hidden;
     }
+}
+
+.header__column--right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: end;
+    gap: 8px;
+}
+
+.header__img {
+    width: 118px;
+    height: 118px;
+    background-image: url(../../assets/avt.webp);
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    border-radius: 100px;
+    box-shadow: 
+        inset 0px -1px 1px hsla(0, 0%, 100%, 0.5),
+        0 4px 6px -1px hsla(0, 0%, 0%, 0.2),
+        0 2px 4px -2px hsla(0, 0%, 0%, 0.2),
+        inset 0px 1px 3px hsla(0, 0%, 0%, 0.1);
 }
